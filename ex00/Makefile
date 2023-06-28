@@ -1,6 +1,6 @@
 NAME = zombie
 
-SRC = main.cpp Zombie.cpp
+SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 
 OBJ=$(SRC:.cpp=.o)
 
@@ -13,10 +13,7 @@ RM = rm -rf
 all: $(NAME)
 
 $(NAME) : $(OBJ)
-	c++ $(FLAGS) $(STD) $< -o $@
-
-%.o: %.c
-	$(FLAGS) $(STD) -c $< -o $@
+	c++ $(FLAGS) $(STD) $(OBJ) -o $@
 
 fclean:
 	$(RM) $(OBJ) $(NAME)
@@ -25,3 +22,5 @@ clean:
 	$(RM) $(NAME)
 
 re:	fclean all
+
+.PHONY: all clean fclean re

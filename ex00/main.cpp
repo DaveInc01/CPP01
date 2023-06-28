@@ -2,7 +2,8 @@
 
 int main ()
 {
-    Zombie *anatoliy;
-    *anatoliy = *anatoliy->newZombie("Thing");
-    anatoliy->announce();
+    Zombie *vasiliy = newZombie("vasya");
+    randomChump("dmitri");
+    vasiliy->announce();
+    delete (vasiliy);
 }
