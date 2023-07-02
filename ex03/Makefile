@@ -1,4 +1,4 @@
-NAME = brain
+NAME = humans
 
 SRC = $(wildcard ./*.cpp)
 
