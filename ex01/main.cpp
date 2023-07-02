@@ -2,9 +2,10 @@
 
 int main()
 {
-    Zombie *Z = zombieHorde(5, "Anatoliy");
-    for (int i = 0; i < 5; i++)
-    {
+    int N = 3;
+    Zombie *Z = zombieHorde(N, "Anatoliy");
+    for (int i = 0; i < N; i++)
         Z[i].announce();
-    }
+    delete[] Z;
+    return (0);
 }
