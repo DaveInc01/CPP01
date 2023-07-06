@@ -10,7 +10,7 @@ class Weapon{
         Weapon(){};
         Weapon(std::string t);
     private:
-        std::string *type; 
+        std::string type; 
 };
 
 #endif

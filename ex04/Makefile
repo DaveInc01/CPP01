@@ -1,4 +1,4 @@
-NAME = human
+NAME = replace
 
 SRC = $(wildcard ./*.cpp)
 

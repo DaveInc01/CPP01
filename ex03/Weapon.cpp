@@ -2,12 +2,12 @@
 
 void Weapon::setType(const std::string t)
 {
-   *this->type = t;
+   this->type = t;
 }
 
 const std::string &Weapon::getType()
 {
-    const std::string &strRef = *this->type;
+    const std::string &strRef = this->type;
     return (strRef);
 }
 
