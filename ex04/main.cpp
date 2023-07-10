@@ -42,6 +42,7 @@ void replace_text(std::string file_text, char **argv)
             file_text = file_text.substr(old_match, file_text.length());
             found = file_text.find(finder, 0);
         }
+        new_file << file_text;
     }
     new_file.close();
 }
